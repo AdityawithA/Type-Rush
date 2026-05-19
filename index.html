@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeRush</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+
+  <div class="container">
+    <h1>⌨️ TypeRush ⚡</h1>
+
+    <div class="controls">
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <select id="timer">
+        <option value="30">30 Seconds</option>
+        <option value="60" selected>60 Seconds</option>
+      </select>
+
+      <button id="restartBtn">Restart</button>
+    </div>
+
+    <div class="quote-box" id="quote"></div>
+
+    <textarea id="input" placeholder="Start typing here..." autofocus></textarea>
+
+    <div class="stats">
+      <div class="card">
+        <h2 id="wpm">0</h2>
+        <p>WPM</p>
+      </div>
+
+      <div class="card">
+        <h2 id="accuracy">100%</h2>
+        <p>Accuracy</p>
+      </div>
+
+      <div class="card">
+        <h2 id="mistakes">0</h2>
+        <p>Mistakes</p>
+      </div>
+
+      <div class="card">
+        <h2 id="time">60</h2>
+        <p>Time Left</p>
+      </div>
+    </div>
+
+    <div class="leaderboard">
+      <h2>🏆 Score History</h2>
+      <ul id="history"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
